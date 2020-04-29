@@ -245,6 +245,11 @@ TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 # Power
 TARGET_PROVIDES_POWERHAL := true
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
