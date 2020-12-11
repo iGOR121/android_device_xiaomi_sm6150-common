@@ -86,6 +86,10 @@ on boot
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status
 
+    # Allow system to modify exposure adjustment state
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100
