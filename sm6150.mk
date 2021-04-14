@@ -44,20 +44,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
-    audio.primary.sm6150 \
-    audio.usb.default \
-    audio.r_submix.default \
-    audio_amplifier.sm6150
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libhdmiedid \
-    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
-    libspkrprot \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
