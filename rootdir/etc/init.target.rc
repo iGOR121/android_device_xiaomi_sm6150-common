@@ -91,8 +91,8 @@ on boot
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status
 
     # Allow system to modify exposure adjustment state
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/dc_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/dc_enable
 
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
